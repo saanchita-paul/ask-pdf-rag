@@ -1,0 +1,27 @@
+# Langchain and AI Model Libraries
+pypdf
+langchain
+langchain-community
+langchain-google-genai
+
+# Vector Store
+faiss-cpu
+pandas
+
+# API Server
+fastapi
+uvicorn[standard]
+python-multipart
+
+# Configuration
+pydantic
+pydantic-settings
+
+python-dotenv
+
+pip install "unstructured[pdf]" "unstructured[local-inference]"
+# You might also need to install poppler utilities for PDF processing
+# On Ubuntu: sudo apt-get install poppler-utils
+# On Windows: Download from poppler.freedesktop.org and add to PATH
+
+pip install sentence-transformers
