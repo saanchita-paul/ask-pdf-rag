@@ -141,3 +141,7 @@ Sample Output:
 | `pydantic`          | Data models for query and response schemas |
 | `pydantic-settings` | Read `.env` config easily                   |
 | `python-dotenv`     | Load `.env` into environment               |
+
+### API Documentation
+
+[Check Postman API Documentation](https://documenter.getpostman.com/view/15919922/2sB34oDdgp)
