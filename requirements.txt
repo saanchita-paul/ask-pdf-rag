@@ -18,10 +18,4 @@ pydantic
 pydantic-settings
 
 python-dotenv
-
-pip install "unstructured[pdf]" "unstructured[local-inference]"
-# You might also need to install poppler utilities for PDF processing
-# On Ubuntu: sudo apt-get install poppler-utils
-# On Windows: Download from poppler.freedesktop.org and add to PATH
-
-pip install sentence-transformers
+sentence-transformers

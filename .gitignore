@@ -1,0 +1,8 @@
+
+.idea/
+__pycache__/
+vectorstore/
+.DS_Store
+.env
+responses/
+data
