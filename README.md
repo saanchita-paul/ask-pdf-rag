@@ -13,7 +13,7 @@ This project implements a simple **Retrieval-Augmented Generation (RAG)** pipeli
 -  Grounded, extractive answers only (no hallucination)
 -  Evaluation matrix for relevance and groundedness
 
-## ⚙️ Project Setup and Installation
+##  Project Setup and Installation
 
 Follow these steps to set up and run the project on your local machine.
 
@@ -35,25 +35,35 @@ cd ask-pdf-rag
 It is highly recommended to use a virtual environment to manage project dependencies.
 
 #### Create the virtual environment
-```python3 -m venv .venv```
+```bash
+python3 -m venv .venv
+```
 
 #### Activate the virtual environment
-```source .venv/bin/activate```
+```bash
+source .venv/bin/activate
+```
 
 ### Step 3: Install Requirements
 Install all the required Python packages using the requirements.txt file.
 
-```pip install -r requirements.txt```
+```bash
+pip install -r requirements.txt
+```
 
 ### Step 4: Environment Variable
 Create a .env file in the root directory:
 
-```GOOGLE_API_KEY="YOUR_API_KEY_HERE"
+```bash
+GOOGLE_API_KEY="YOUR_API_KEY_HERE"
+
 ```
 
 ### Step 5: Add the PDF Corpus
 Place your PDF in the data/ directory:
-```data/HSC26-Bangla1st-Paper.pdf```
+```bash
+data/HSC26-Bangla1st-Paper.pdf
+```
 
 
 ### Step 6: Create Vector Index
@@ -61,12 +71,16 @@ Before you can run the API, you need to process your PDF data and create the loc
 This will create a vectorstore/ directory containing the index files. This process might take a few minutes depending on the size of your PDF file.
 
 **Note:** If you have already received a pre-indexed vectorstore folder, you can skip this step. Simply place the entire vectorstore folder in the root directory of the project before starting the API server.
-```python create_index.py```
+```bash
+python create_index.py
+```
 
 
 ### Step 7: Start the FastAPI Server
 Once the index is created, you can start the API server.
-```uvicorn rag_api:app --reload```
+```bash
+uvicorn rag_api:app --reload
+```
 
 
 The server will be running at http://127.0.0.1:8000. The --reload flag will automatically restart the server if you make any changes to the code.
