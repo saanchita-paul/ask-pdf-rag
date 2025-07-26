@@ -87,20 +87,24 @@ The server will be running at http://127.0.0.1:8000. The --reload flag will auto
 
 ### Using API:
 
-Query Example:
+**Query Example:**
 
+```bash
 curl -X 'POST' \
   '[http://127.0.0.1:8000/api/query](http://127.0.0.1:8000/api/query)' \
   -H 'Content-Type: application/json' \
   -d '{
      "query": "বিয়ের সময় কল্যাণীর প্রকৃত বয়স কত ছিল?"
   }'
+```
 
-Sample Output:
+**Sample Output:**
+```bash
 {
 "original_query": "বিয়ের সময় কল্যাণীর প্রকৃত বয়স কত ছিল?",
 "answer": "১৫ বছর"
 }
+```
 
 
 ### Evaluation Metrics
